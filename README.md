@@ -12,6 +12,6 @@ Steps to setup:
 8) make a VisualizeServer folder
 9) go to VisualizeServer folder
 10) npm init to create package.json
-11) tsc --init to create ts.config
+11) tsc --init to create tsconfig.json
 12) npm install express
 13) implement mainJs.js to server angular JS
