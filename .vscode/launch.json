@@ -5,13 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-node",
+            "name": "Debug typescript",
+            "program": "${workspaceFolder}/visualizeserver/src/index.ts",
+            "cwd": "${workspaceFolder}/visualizeserver",
+            "sourceMaps": true,
             "request": "launch",
-            "name": "Launch Program",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\visualizeserver\\dist\\index.js",
+            "type": "pwa-node"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch runexpress.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "sourceMaps": true,
+            "cwd": "${workspaceFolder}\\visualizeserver",
+            "program": "${workspaceFolder}\\visualizeserver\\src\\runexpress.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
